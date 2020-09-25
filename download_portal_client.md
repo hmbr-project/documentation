@@ -3,7 +3,7 @@
 Python-based client for downloading data files hosted by the an instance of
 the portal software developed by the GDC and further modified by the
 Institute for Genome Sciences (IGS). There are several portals running on the
-internet to support various research efforts. Notably, the NeMO Archive uses the portal
+internet to support various research efforts. Notably, the HMBR Archive uses the portal
 to enable data exploration and download. The client accepts a *manifest file*
 as an input. This file contains URLs to the files to be downloaded. Manifest
 files can be generated using the shopping cart functionality of the portal's
