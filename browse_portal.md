@@ -4,11 +4,11 @@
 
 The [HMBR Portal](https://portal.microbiome-bioactives.org/) provides a summary of available data, as well as faceted and advanced search tools to identify data of interest. 
 
-![HMBR portal home page](images/hmbr_data_portal/nemo-main-landing-page.png)
+![HMBR portal home page](images/hmbr_data_portal/hmbr-main-landing-page.png)
 
 The portal landing page is broken up into 3 section:
  * The welcome box provides your entry to querying data, described in more detail immediately below.
- * A bar graph breaks down number of samples per modality per study. This currently tracks open access, BICCN-funded data only.
+ * A bar graph breaks down number of samples per modality per study.
  * The data portal summary bar at the bottom provides a high level summary of all data currently available through the HMBR portal.
  
 ### The Welcome Box
@@ -17,7 +17,7 @@ Begin exploring data by study or through the faceted or advanced search options.
 
 The `data` button will take you to the faceted data search page, the heart of the portal's functionality, described below.
 
-Below these are a set of pre-defined, commonly accessed queries. As an example, one can easily retreive all 10x Chromium 3' v2 sequenced FASTQ files, useful if, for example, you're interested in finding data suitable to [export to the Terra Optimus pipeline](to be entered).
+Below these are a set of pre-defined, commonly accessed queries. As an example, one can easily retreive all samples from male subjects in the PROTECT study.
 
 
 ### Faceted Search Page
@@ -26,31 +26,27 @@ The HMBR Data Portal provides a simple faceted search query interface to help id
 
 The filter panel on the left allows users to select one or more of the available facets to filter down the samples of interest (See #1 in figure). Selecting any facet automatically populates the advanced search box with the current query (See #2 in figure). The summary results panel provides dynamic pie charts summarizing data corresponding to the currently selected filters (See #3 in figure).
 
-![HMBR data landing page](images/hmbr_data_portal/nemo-data-landing-page.png)
+![HMBR data landing page](images/hmbr_data_portal/hmbr-data-landing-page.png)
 
 The filter panel contains two tabs of pre-configured facets associated with 
-* samples (project, grant, organisms, anatomical structure, library method, technique and modality), or 
-* files (format, modality, data type) 
+* samples (study, assay prep, race, smoking history, gender, and age category), or 
+* files (format, category, matrix type) 
 
-The number next to each facet corresponds to the number of samples associated with this attribute across *all* projects in the portal. This number does not change dynamically as facets are selected or deselected. What does change is the summary results panel. As facets are selected, the file count, sample count and fiule size total will update to reflect the current filter(s). The pie charts will also update to reflect the current filter(s). Hovering over any of the pie charts will show a table of counts of files and total file size for each component of the pie chart. This table is also accessible by clicking on the table icon in the upper right corner of the pie chart to toggle between chart or table views.  
+The number next to each facet corresponds to the number of samples associated with this attribute across *all* projects in the portal. This number does not change dynamically as facets are selected or deselected. What does change is the summary results panel. As facets are selected, the file count, sample count and file size total will update to reflect the current filter(s). The pie charts will also update to reflect the current filter(s). Hovering over any of the pie charts will show a table of counts of files and total file size for each component of the pie chart. This table is also accessible by clicking on the table icon in the upper right corner of the pie chart to toggle between chart or table views.  
 
 In addition to filtering via the filter panel, users can click directly on a pie piece or table field to dig further into a specific component of the dataset. Once data has been refined to the dataset of interest, click on the **Files** tab of the summary results panel. From here, files can be added to the shopping cart, as described below. 
 
 Additional facets are available by ***Add a Filter*** in the upper right of the filter panel. The resulting pop-up lists all additional searchable facets available, which can be browsed or searched for using the search bar at the top. Clicking on any facet will add it to the top of the filter panel for incorporation into the current filter.
 
 #### Example query
-Doctor Ben wants is interested in mouse ATAC-seq data. Specifically, he wants to see what brain regions were sequenced and have raw data available at the HMBR archives. Starting at [portal.microbiome-bioactives.org/](http://portal.microbiome-bioactives.org/), he takes the following steps:
+Doctor Ben wants is interested in sample data from male subjects enrolled in the PROTECT study. Starting at [portal.microbiome-bioactives.org/](https://portal.microbiome-bioactives.org/), he takes the following steps:
 1) Click the `Data` button in the welcome box to access the faceted search page
-2) In the Samples filter panel, select Mouse in the Organisms category AND ATAC-seq in the Techniques category. This narrows his results to mouse ATAC-seq data.
-3) In the Files filter panel, select FASTQ in the Format category. This further narrows the search to only raw FASTQ files. This filter could also have been applied from the pie chart summary panel.
-4) In the summary results panel, navigate to the File Counts by Anatomical Structure pie chart, and click on the table icon in the upper right corner of the chart box. This allows Doctor Ben to see a breakdown of the five brain regions which have been sequenced.
+2) In the Samples filter panel, select PROTECT in the Studies category AND Male in the Gender category. This narrows his results to male PROTECT data.
 
-![HMBR select some data](images/hmbr_data_portal/nemo-data-select-study.png) - UPDATE THIS to reflect step by step corresponding to above new example
+![HMBR select some data](images/hmbr_data_portal/hmbr-data-select-study.png)
 
-5) After some consideration and lots of teleconferences with collaborators, Doctor Ben decides that he wants to analyze the brain stem samples in conjunction with some of his own personal data. In order to access those specific raw FASTQ files, he clicks on brain stem in the summary results panel table from step 4. (Shaun, this doesn't work)
-
-6) He clicks on the Files tab and adds all files to his shopping cart using the cart icon at the top of the Files box. 
-7) 
+3) He clicks on the Files tab and adds all files to his shopping cart using the cart icon at the top of the Files box. 
+4) 
 
 
 [top](#top)
@@ -81,11 +77,11 @@ Auto-complete helps in entering an advanced query. Auto-complete will pull all v
 ### Adding Files To Shopping Cart <a name="add-to-shopping-cart"></a>
 Once data has been refined to the dataset of interest, click on the **Files** tab of the summary results panel. This will bring up the list of files matching the search criterion. The files list table provides some basic information about the file including access type, URL, data category, file format, and size.
 
-![Add files to shopping cart](images/hmbr_data_portal/nemo-add-to-shopping-cart.png)
+![Add files to shopping cart](images/hmbr_data_portal/hmbr-add-to-shopping-cart.png)
 
 Clicking on an individual file takes users to a summary page for the selected file, with the option to download via the `Download` button in the upper right. 
 
-![Indivdual file information](images/hmbr_data_portal/nemo-file-list-item-details.png)
+![Indivdual file information](images/hmbr_data_portal/hmbr-file-list-item-details.png)
 
 To download multiple files, users can either click on the shopping cart icon to the left of all files of interest or select the shopping cart dropdown at the top left of theFiles table and select **Add all files to the Cart**.  
 
