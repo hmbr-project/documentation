@@ -47,17 +47,8 @@ Simple Storage Service (S3) buckets. If a download cannot be performed for
 a file with HTTP, and the file is available via S3 and FTP, by default, the
 client will next attempt an FTP transfer, followed finally by S3...
 
-## 2. Basic invocation on Amazon AWS
 
-In the special case of executing portal_client on an EC2 instance on Amazon
-AWS, it's faster and more economical to retrieve data from S3, since there
-are no egress charges applied to such transfer. Therefore, the portal_client
-is configured to automatically detect when it is invoked on Amazon infrastructure
-and move the S3 protocol to the highest priority ahead of HTTP and FTP. The
-endpoint priority when running on EC2 is therefore: S3, HTTP, FTP, as opposed
-to the normal priority of HTTP, FTP, S3.
-
-## 3. Altering the target directory
+## 2. Altering the target directory
 
 By default, portal_client will download data to the same directory (the
 "working director"), that the user invoked portal_client from. To alter the
@@ -75,7 +66,7 @@ portal_client --manifest /path/to/my/manifest.tsv \
   --destination /path/to/my/destination/directory
 ```
 
-## 4. Overriding the default endpoint-priority
+## 3. Overriding the default endpoint-priority
 
 Sometimes, it may be advantageous to override the default endpoints, and their
 priorities, that the portal_client will consider when downloading data. This is
@@ -89,7 +80,7 @@ In the above example, portal_client will NOT consider or attempt to download
 data from HTTP or FTP urls. It will only use `s3://` urls. Any URLs that do NOT
 use the `s3://` protocol will be skipped.
 
-## 5. Downloads using Aspera
+## 4. Downloads using Aspera
 
 The portal_client includes support for downloading data via Aspera's
 propietary 'fasp' protocol. This is a proprietary high-performance protocol
@@ -119,30 +110,8 @@ The above command will consider and download data from both `fasp://` and
 Failure to specify the `--user` option will result in an error message when
 'FASP' is used.
 
-## 6. Downloads from Google Cloud Platform (GCP)
 
-The portal_client is able to retrieve data from Google Cloud Storage buckets.
-Files in a google bucket, are addressable with URLs that begin with `gs://`,
-so if a manifest includes such URLs, one must enable the GS
-endpoint.
-
-When accessing data in this manner from Google, a "client secrets" file must
-first be generated. Documentation for how that is accomplished is available
-from Google and is beyond the scope of this guide, but it is used to
-authorize the portal_client to access data in a Google storage bucket.
-Specify the path to the client secrets file with the
-`--google-client-secrets` option. Additionally, the ID of a valid Google
-project must also be specified with the `--google-project-id` option. A full
-example is below:
-
-```bash
-portal_client --manifest /path/to/my/manifest.tsv \
-  --endpoint-priority GS,HTTP \
-  --google-client-secrets /path/to/my/client-secrets.json \
-  --google-project-id my-google-project-id
-```
-
-## 7. Disabling checksum validation
+## 5. Disabling checksum validation
 
 The portal_client usually verifies downloads after they happen by performing
 and MD5 checksum on the downloaded data, and comparing it to the checksums
@@ -157,7 +126,7 @@ Example:
 portal_client --disable-validation --manifest /path/to/my/manifest.tsv
 ```
 
-## 8. Debug mode
+## 6. Debug mode
 
 Users can see verbose additional information when executing portal_client by
 passing the `--debug` option. This will typically result in a large amount of
