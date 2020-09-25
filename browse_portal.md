@@ -46,7 +46,6 @@ Doctor Ben wants is interested in sample data from male subjects enrolled in the
 ![HMBR select some data](images/hmbr_data_portal/hmbr-data-select-study.png)
 
 3) He clicks on the Files tab and adds all files to his shopping cart using the cart icon at the top of the Files box. 
-4) 
 
 
 [top](#top)
@@ -66,7 +65,7 @@ A query requires the following basic format:
 The property is what you're searching on, ie the facet. The comparison operator is how you want to relate your value to your property, ie equals, in. The value is what you're filtering the property on.
 
 For example:
-**project.name = "BICCN"** 
+**sample.assay_prep = "Metagenomics seq"** 
 ![HMBR Advanced Query](images/hmbr_data_portal/advanced-query.png)
 
 
