@@ -2,7 +2,7 @@
 
 <!-- To get started with this tutorial, it is recommended that Steps 1 - 3 are followed in the [**Search for Data in the HMBR Portal**](Search-for-Data-in-the-HMBR-Portal) page so that there are files in the Shopping Cart. -->
 
-For this example we will start with the four files from the shopping cart as picture below.
+For this example we will start with the two files from the shopping cart as picture below.
 
 ![shopping cart image](images/hmbr_data_portal/hmbr-shopping-cart-details.png)
 
