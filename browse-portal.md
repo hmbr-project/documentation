@@ -79,7 +79,7 @@ Once data has been refined to the dataset of interest, click on the **Files** ta
 
 Clicking on an individual file takes users to a summary page for the selected file, with the option to download via the `Download` button in the upper right. 
 
-![Individual file information](images/hmbr_data_portal/hmbr-file-list-item-details.png)
+![Individual file information](https://github.com/hmbr-project/documentation/blob/master/images/hmbr_data_portal/hmbr-file-list-item-details.png)
 
 To download multiple files, users can either click on the shopping cart icon to the left of all files of interest or select the shopping cart dropdown at the top left of the Files table and select **Add all files to the Cart**.  
 
