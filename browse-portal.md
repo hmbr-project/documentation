@@ -4,7 +4,7 @@
 
 The [HMBR Portal](https://portal.microbiome-bioactives.org/) provides a summary of available data, as well as faceted and advanced search tools to identify data of interest. 
 
-![HMBR portal home page](images/hmbr_data_portal/hmbr-main-landing-page.png)
+![HMBR portal home page](https://github.com/hmbr-project/documentation/blob/master/images/hmbr_data_portal/hmbr-main-landing-page.png)
 
 The portal landing page is broken up into 3 section:
  * The welcome box provides your entry to querying data, described in more detail immediately below.
@@ -26,7 +26,7 @@ The HMBR Data Portal provides a simple faceted search query interface to help id
 
 The filter panel on the left allows users to select one or more of the available facets to filter down the samples of interest (See #1 in figure). Selecting any facet automatically populates the advanced search box with the current query (See #2 in figure). The summary results panel provides dynamic pie charts summarizing data corresponding to the currently selected filters (See #3 in figure).
 
-![HMBR data landing page](images/hmbr_data_portal/hmbr-data-landing-page.png)
+![HMBR data landing page](https://github.com/hmbr-project/documentation/blob/master/images/hmbr_data_portal/hmbr-data-landing-page.png)
 
 The filter panel contains two tabs of pre-configured facets associated with 
 * samples (study, assay prep, race, smoking history, gender, and age category), or 
@@ -43,7 +43,7 @@ Doctor Ben wants is interested in sample data from male subjects enrolled in the
 1) Click the `Data` button in the welcome box to access the faceted search page
 2) In the Samples filter panel, select PROTECT in the Studies category AND Male in the Gender category. This narrows his results to male PROTECT data.
 
-![HMBR select some data](images/hmbr_data_portal/hmbr-data-select-study.png)
+![HMBR select some data](https://github.com/hmbr-project/documentation/blob/master/images/hmbr_data_portal/hmbr-data-select-study.png)
 
 3) He clicks on the Files tab and adds all files to his shopping cart using the cart icon at the top of the Files box.
 
@@ -53,7 +53,7 @@ Doctor Ben wants is interested in sample data from male subjects enrolled in the
 
 The Advanced Search feature simulates querying a database directly. To begin an advanced search, click the "Advanced" button in the upper right corner of the advanced search box. 
 
-![HMBR Advanced Search button](images/hmbr_data_portal/advanced-search.png)
+![HMBR Advanced Search button](https://github.com/hmbr-project/documentation/blob/master/images/hmbr_data_portal/advanced-search.png)
 
 A query requires the following basic format:
 
@@ -65,7 +65,7 @@ The property is what you're searching on, ie the facet. The comparison operator 
 
 For example:
 **sample.assay_prep = "Metagenomics seq"** 
-![HMBR Advanced Query](images/hmbr_data_portal/advanced-query.png)
+![HMBR Advanced Query](https://github.com/hmbr-project/documentation/blob/master/images/hmbr_data_portal/advanced-query.png)
 
 
 Clicking "Submit Query" will update the summary results panel in the same way as the faceted search. 
@@ -75,7 +75,7 @@ Auto-complete helps in entering an advanced query. Auto-complete will pull all v
 ### Adding Files To Shopping Cart <a name="add-to-shopping-cart"></a>
 Once data has been refined to the dataset of interest, click on the **Files** tab of the summary results panel. This will bring up the list of files matching the search criterion. The files list table provides some basic information about the file including access type, URL, data category, file format, and size.
 
-![Add files to shopping cart](images/hmbr_data_portal/hmbr-add-to-shopping-cart.png)
+![Add files to shopping cart](https://github.com/hmbr-project/documentation/blob/master/images/hmbr_data_portal/hmbr-add-to-shopping-cart.png)
 
 Clicking on an individual file takes users to a summary page for the selected file, with the option to download via the `Download` button in the upper right. 
 
