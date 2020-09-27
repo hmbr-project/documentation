@@ -2,6 +2,6 @@
 
 The HMBR portal documentation is broken up into following categories:
 
-* [Data Browsing](https://www.microbiome-bioactives.org/?page_id=211)
-* [Data Downloads](https://www.microbiome-bioactives.org/?page_id=213)
-* [Download with Portal Client](https://www.microbiome-bioactives.org/?page_id=215)
+* [Data Browsing](https://www.microbiome-bioactives.org/browse-portal/)
+* [Data Downloads](https://www.microbiome-bioactives.org/download-file-manifest/)
+* [Download with Portal Client](https://www.microbiome-bioactives.org/download-portal-client/)
