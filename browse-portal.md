@@ -2,7 +2,7 @@
 
 # The HMBR Portal
 
-The [HMBR Portal](https://portal.microbiome-bioactives.org/) provides a summary of available data, as well as faceted and advanced search tools to identify data of interest. 
+The [HMBR Portal](http://portal.microbiome-bioactives.org/) provides a summary of available data, as well as faceted and advanced search tools to identify data of interest. 
 
 ![HMBR portal home page](https://github.com/hmbr-project/documentation/blob/master/images/hmbr_data_portal/hmbr-main-landing-page.png)
 
@@ -39,7 +39,7 @@ In addition to filtering via the filter panel, users can click directly on a pie
 Additional facets are available by ***Add a Filter*** in the upper right of the filter panel. The resulting pop-up lists all additional searchable facets available, which can be browsed or searched for using the search bar at the top. Clicking on any facet will add it to the top of the filter panel for incorporation into the current filter.
 
 #### Example query
-Doctor Ben wants is interested in sample data from male subjects enrolled in the PROTECT study. Starting at [portal.microbiome-bioactives.org/](https://portal.microbiome-bioactives.org/), he takes the following steps:
+Doctor Ben wants is interested in sample data from male subjects enrolled in the PROTECT study. Starting at [portal.microbiome-bioactives.org/](http://portal.microbiome-bioactives.org/), he takes the following steps:
 1) Click the `Data` button in the welcome box to access the faceted search page
 2) In the Samples filter panel, select PROTECT in the Studies category AND Male in the Gender category. This narrows his results to male PROTECT data.
 
