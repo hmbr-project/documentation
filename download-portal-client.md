@@ -80,38 +80,7 @@ In the above example, portal_client will NOT consider or attempt to download
 data from HTTP or FTP urls. It will only use `s3://` urls. Any URLs that do NOT
 use the `s3://` protocol will be skipped.
 
-## 4. Downloads using Aspera
-
-The portal_client includes support for downloading data via Aspera's
-propietary 'fasp' protocol. This is a proprietary high-performance protocol
-that uses UDP packets. The `ascp` utility *must* be installed, and available,
-on the same system as the portal client, or an error will occur. Please check
-for the availablity of 'ascp' with `which`:
-
-```bash
-which ascp
-```
-
-One must also explicitly include 'FASP' in the endpoint priority listing. In
-addition, the portal_client will also require the user to specify a username
-with the `--user` option and will interactively prompt the user for their
-Aspera server credential. The password will NOT be echoed to the
-screen/terminal for security reasons. Example:
-
-```bash
-portal_client --manifest /path/to/my/manifest.tsv \
-  --endpoint-priority FASP,HTTP \
-  --user myusername
-```
-
-The above command will consider and download data from both `fasp://` and
-`http://` urls, with preference given to Aspera.
-
-Failure to specify the `--user` option will result in an error message when
-'FASP' is used.
-
-
-## 5. Disabling checksum validation
+## 4. Disabling checksum validation
 
 The portal_client usually verifies downloads after they happen by performing
 and MD5 checksum on the downloaded data, and comparing it to the checksums
@@ -126,7 +95,7 @@ Example:
 portal_client --disable-validation --manifest /path/to/my/manifest.tsv
 ```
 
-## 6. Debug mode
+## 5. Debug mode
 
 Users can see verbose additional information when executing portal_client by
 passing the `--debug` option. This will typically result in a large amount of
